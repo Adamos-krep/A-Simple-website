@@ -1,0 +1,100 @@
+<!--Creating a website step by step-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<body>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url("/Backup/sunset-g764d812eb_1280.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+        }
+
+        nav{
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content:space-between;
+            background-color:black;
+            padding:2em;
+        }
+
+        nav #Logo{
+            font-size:26px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:rgb(8, 49, 124);
+            margin-left:10px;
+        }
+
+        nav ul li,a{
+            padding:20px;
+            text-decoration:none;
+            list-style:none;
+            display:inline;
+            color:whitesmoke;
+            font-family:monospace,'Courier New', Courier;
+            transition:0.3s color,background ease-out;
+        }
+
+        nav a:hover{
+            color:goldenrod;
+        }
+
+        /*Main content style*/
+        main{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:space-between;
+            height:80vh;
+        }
+
+        .main-txt h1{
+            color:darkgoldenrod;
+            background-color: black;
+            padding:20px;
+            margin-left:20px;
+            border-radius:20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #name{
+            color:azure;
+        }
+    </style>
+    <!--Navigation bar-->
+    <header>
+        <nav>
+            <span id="Logo">Adamos | webdev</span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main content-->
+    <main>
+        <div class="main-txt">
+            <h1>Hi,My name is <span id="name">Adamos</span><br>and I'm a web developer!</h1>
+        </div>
+        <div class="PersonFace">
+            <img src="/Backup/person.png">
+        </div>
+    </main>
+</body>
+</html>
